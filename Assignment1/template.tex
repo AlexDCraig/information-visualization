@@ -20,9 +20,10 @@
 \fi%
 
 %% it is recomended to use ``\autoref{sec:bla}'' instead of ``Fig.~\ref{sec:bla}''
-\graphicspath{{figures/}{pictures/}{images/}{./}} % where to search for the images
+\graphicspath{ {pictures/} } % where to search for the images
 
 \usepackage{microtype}                 % use micro-typography (slightly more compact, better to read)
+\usepackage{hyperref}
 \PassOptionsToPackage{warn}{textcomp}  % to address font issues with \textrightarrow
 \usepackage{times}                     % we use Times as the main font
 \renewcommand*\ttdefault{txtt}         % a nicer typewriter font
@@ -57,13 +58,24 @@ There are a myriad of potential users of the information visualizations we propo
 \item \emph{NBA Agents: } Agents of NBA players will want to know how much money they should demand for their player in the course of contract negotiation.
 \end{itemize}
 
-\subsection{General Approach to Visualization}
+\subsection{General Approach to Visualization***}
+Our approach to visualization will be inspired by the interface provided when making in-game substitutions in the video game \emph{FIFA 17} as well as the following image provided by Rami Moghadam at \url{http://ramimo.com/2013-NBA-All-Stars}. In his image, he has players from the NBA All-Star Game represented as circular graphs consisting of slices such as \emph{Fouls} and \emph{Minutes} with cells that begin at 0 and increase incrementally to large numbers. There is coloration within each slice that reaches up to the cell that corresponds to their season average as of the All-Star Game. When we look at the graph, we can easily see things like how many minutes they've played and how much they've scored given those minutes. We want to use this circular graph with slices, cells, and methodological coloration. Our slices, like Moghadam's, will correspond to statistical categories we find interesting, and the values in our cells will increment in the same fashion, but we will also have slices devoted to \textbf{team wins and losses} as well as \textbf{paid salary}, among other possible categories. Naturally, we will have to experiment with different statistical categories to see which ones we think are useful. We believe this approach to visualization will help easily create a narrative about whether a player's performance warrants their price tag.
 
 \section{Visualization Tasks}
+The questions we hope to address with the visualization are as follows:
+\begin{itemize}
+\item What statistical categories are useful to look at when considering whether a player is worth what he's paid?
+\item Given those stats, is a certain player overpaid?
+\item Given those stats, is a certain player underpaid?
+\end{itemize}
 
-\section{Data Sources}
+We want to ask these questions about all players, but ultimately our project should consist only of visualizations where a player is overpaid or underpaid, for these are the players who have the most interesting narratives to consider.
 
-\section{Data Organization in Terms of ER Diagrams}
+\section{Data Sources***}
+Luckily, all statistics that relate to NBA players and teams as well as pay information is conveniently available on the ESPN website. Specificially, the data we will use can be found here: \url{http://stats.nba.com/players/traditional/}. Since these are just raw statistics not subject to bias, one source is enough for our purposes.
+
+\section{Data Organization in Terms of ER Diagram}
+\includegraphics[width=9cm, height=9cm]{ERdiagram}
 
 \section{Relational Database Implementation of ER Diagrams}
 
