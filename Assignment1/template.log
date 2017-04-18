@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.18)  16 APR 2017 22:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  17 APR 2017 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -204,65 +204,93 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count100
+\lst@gtempboxa=\box26
+\lst@token=\toks16
+\lst@length=\count101
+\lst@currlwidth=\dimen112
+\lst@column=\count102
+\lst@pos=\count103
+\lst@lostspace=\dimen113
+\lst@width=\dimen114
+\lst@newlines=\count104
+\lst@lineno=\count105
+\lst@maxwidth=\dimen115
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count106
+\lst@skipnumbers=\count107
+\lst@framebox=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 
 Package hyperref Warning: Option `pdftex' has already been used,
-(hyperref)                setting the option has no effect on input line 40.
+(hyperref)                setting the option has no effect on input line 43.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 40.
+(hyperref)                setting the option has no effect on input line 43.
 
-Package hyperref Info: Option `pageanchor' set `true' on input line 40.
-Package hyperref Info: Option `plainpages' set `false' on input line 40.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 40.
+Package hyperref Info: Option `pageanchor' set `true' on input line 43.
+Package hyperref Info: Option `plainpages' set `false' on input line 43.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 43.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 40.
+(hyperref)                setting the option has no effect on input line 43.
 
-Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 40.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 43.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 40.
-Package hyperref Info: Option `breaklinks' set `true' on input line 40.
-Package hyperref Info: Option `colorlinks' set `false' on input line 40.
-Package hyperref Info: Option `nesting' set `true' on input line 40.
-Package hyperref Info: Option `linktocpage' set `true' on input line 40.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 43.
+Package hyperref Info: Option `breaklinks' set `true' on input line 43.
+Package hyperref Info: Option `colorlinks' set `false' on input line 43.
+Package hyperref Info: Option `nesting' set `true' on input line 43.
+Package hyperref Info: Option `linktocpage' set `true' on input line 43.
 (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen112
-\scratchbox=\box26
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen113
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count108
+\scratchdimen=\dimen116
+\scratchbox=\box28
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen117
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks18
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -277,7 +305,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 42.
+LaTeX Info: Redefining \microtypecontext on input line 45.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -291,8 +319,8 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-\AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 42.
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -300,17 +328,18 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count106
+\c@section@level=\count114
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 
 (./template.out) (./template.out)
 \@outlinefile=\write3
 \openout3 = `template.out'.
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 45.
+\c@lstlisting=\count115
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
@@ -325,31 +354,31 @@ File: mt-cmr.cfg 2011/04/09 v2.1 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 45.
+(Font)              <7> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 45.
+(Font)              <5> on input line 48.
 
 <diamondrule.pdf, id=44, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
  <use diamondrule.pdf>
-Package pdftex.def Info: diamondrule.pdf used on input line 45.
+Package pdftex.def Info: diamondrule.pdf used on input line 48.
 (pdftex.def)             Requested size: 213.79822pt x 12.04495pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 45.
+(Font)              <8> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 45.
+(Font)              <6> on input line 48.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 46.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 46.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 58.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 49.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 61.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 64.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 67.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
@@ -360,18 +389,18 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 64.
+(Font)              <9> on input line 67.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 
 <pictures/ERdiagram.png, id=47, 946.53625pt x 481.8pt>
 File: pictures/ERdiagram.png Graphic file (type png)
 
 <use pictures/ERdiagram.png>
-Package pdftex.def Info: pictures/ERdiagram.png used on input line 80.
+Package pdftex.def Info: pictures/ERdiagram.png used on input line 83.
 (pdftex.def)             Requested size: 256.0737pt x 256.0806pt.
 
-Overfull \hbox (4.75471pt too wide) in paragraph at lines 80--81
+Overfull \hbox (4.75471pt too wide) in paragraph at lines 83--84
 [] 
  []
 
@@ -379,42 +408,70 @@ Overfull \hbox (4.75471pt too wide) in paragraph at lines 80--81
 
 
  <./diamondrule.pdf>]
-Underfull \hbox (badness 1527) in paragraph at lines 82--82
+Underfull \hbox (badness 1527) in paragraph at lines 85--85
 []\OT1/phv/b/sc/9 Relational Database Im-ple-men-ta-tion of ER Di-a-
  []
 
-No file template.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
-[2
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 87.
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
 
- <./pictures/ERdiagram.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+Overfull \hbox (24.08382pt too wide) in paragraph at lines 182--183
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.4836pt too wide) in paragraph at lines 183--185
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./pictures/ERdiagram.png>]
+No file template.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+[3
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
-Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: DE2940375D71C7E362210019043241F7;669.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+
+
+Package rerunfilecheck Warning: File `template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `template.out':
+(rerunfilecheck)             Before: 5F32593BF8FDFB122EDE335B5EF8B0D0;670
+(rerunfilecheck)             After:  B2067CF4A96739C3956ECE6B782A4F32;670.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 7046 strings out of 495063
- 108270 string characters out of 3182201
- 221353 words of memory out of 3000000
- 10012 multiletter control sequences out of 15000+200000
- 27909 words of font info for 126 fonts, out of 3000000 for 9000
+ 8648 strings out of 495063
+ 130783 string characters out of 3182201
+ 311326 words of memory out of 3000000
+ 11468 multiletter control sequences out of 15000+200000
+ 29189 words of font info for 129 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 33i,7n,35p,2049b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/he
-lvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (2 pages, 114067 bytes).
+ 33i,7n,40p,2049b,1848s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{section.135} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
+etic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (3 pages, 131634 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 32859 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 34907 words of extra memory for PDF output out of 35830 (max. 10000000)
 
