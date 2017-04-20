@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.18)  19 APR 2017 17:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.18)  19 APR 2017 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -437,25 +437,37 @@ Missing character: There is no ™ in font ptmr7t!
 File: pictures/stats.png Graphic file (type png)
 
 <use pictures/stats.png>
-Package pdftex.def Info: pictures/stats.png used on input line 216.
+Package pdftex.def Info: pictures/stats.png used on input line 215.
 (pdftex.def)             Requested size: 256.07864pt x 256.12973pt.
 
-Overfull \hbox (14.75967pt too wide) in paragraph at lines 216--217
-[][] 
+Underfull \hbox (badness 2970) in paragraph at lines 214--216
+\OT1/ptm/m/n/9 (+20) The de-sign in-ter-face fol-lows the vi-su-al-iza-tion ide
+a ex-plained
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 214--216
+\OT1/ptm/m/n/9 (+20) graph is split into sep-a-rate cat-e-gories which rep-re-s
+ent the per-
+ []
+
+
+Overfull \hbox (4.75966pt too wide) in paragraph at lines 214--216
+[] 
  []
 
 No file template.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
 [3
 
  <./pictures/stats.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: B2067CF4A96739C3956ECE6B782A4F32;670.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
  8652 strings out of 495063
@@ -472,7 +484,7 @@ type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/he
 lvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (3 pages, 200943 bytes).
+Output written on template.pdf (3 pages, 201129 bytes).
 PDF statistics:
  252 PDF objects out of 1000 (max. 8388607)
  234 compressed objects within 3 object streams
