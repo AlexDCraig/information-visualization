@@ -1,10 +1,17 @@
 \BOOKMARK [1][]{section.1}{Introduction}{}% 1
-\BOOKMARK [2][]{subsection.2}{Problem Explanation}{section.1}% 2
-\BOOKMARK [2][]{subsection.3}{Importance of Visualization}{section.1}% 3
-\BOOKMARK [2][]{subsection.4}{Potential Users and User Groups}{section.1}% 4
-\BOOKMARK [2][]{subsection.5}{General Approach to Visualization}{section.1}% 5
-\BOOKMARK [1][]{section.6}{Visualization Tasks}{}% 6
-\BOOKMARK [1][]{section.7}{Data Sources}{}% 7
-\BOOKMARK [1][]{section.8}{Data Organization in Terms of ER Diagram}{}% 8
-\BOOKMARK [1][]{section.9}{Relational Database Implementation of ER Diagrams}{}% 9
-\BOOKMARK [1][]{section.134}{Design of the Visualization Interface}{}% 10
+\BOOKMARK [1][]{section.2}{Related Work}{}% 2
+\BOOKMARK [1][]{section.3}{Method/Computational Model}{}% 3
+\BOOKMARK [2][]{subsection.4}{Method Overview}{section.3}% 4
+\BOOKMARK [2][]{subsection.5}{Stage 1}{section.3}% 5
+\BOOKMARK [2][]{subsection.6}{Stage n}{section.3}% 6
+\BOOKMARK [2][]{subsection.7}{Parameters}{section.3}% 7
+\BOOKMARK [2][]{subsection.8}{Figures and Images}{section.3}% 8
+\BOOKMARK [2][]{subsection.9}{Enhancements}{section.3}% 9
+\BOOKMARK [1][]{section.10}{Implementation}{}% 10
+\BOOKMARK [1][]{section.11}{Results and Performance}{}% 11
+\BOOKMARK [2][]{subsection.12}{Results}{section.11}% 12
+\BOOKMARK [2][]{subsection.13}{Performance Analysis}{section.11}% 13
+\BOOKMARK [2][]{subsection.14}{Movies and Supplementary Material}{section.11}% 14
+\BOOKMARK [1][]{section.15}{Application Paper}{}% 15
+\BOOKMARK [1][]{section.16}{Conclusions and Future Work}{}% 16
+\BOOKMARK [1][]{section.17}{Acknowledgments}{}% 17
