@@ -25,6 +25,7 @@
 \usepackage{microtype}                 % use micro-typography (slightly more compact, better to read)
 \usepackage{hyperref}
 \usepackage{listings}
+\usepackage{cite}
 
 \PassOptionsToPackage{warn}{textcomp}  % to address font issues with \textrightarrow
 \usepackage{times}                     % we use Times as the main font
@@ -47,9 +48,8 @@
 
 \maketitle
 
-\begin{abstract}
-This paper attempts to describe how an NBA player's salary can be beneficial or detrimental to their team based on their performance in several statistical categories. This serves as a useful starting point for front office professionals employed by NBA teams who wish to make reasoned judgments about whether they should extend a player's contract or let them walk into free agency. After all, statistics in NBA basketball have become nuanced and sophisticated in the past decade, and teams such as the San Antonio Spurs have embraced their use and excel as a result. We believe that visualizations are the best method for truly understanding the effectiveness of an NBA player in the context of their salary since when these statistics are merely presented in their numerical form, people who are not mathematical experts (such as NBA General Managers, who are responsible for offering contracts to players) may not grasp the conclusion, or even worse, they may get the wrong impression about a certain player. Specifically, we believe that the radar chart is the most appropriate type of visualization to achieve this effect, since there are multiple statistical categories being judged by their relation to salary, which means it is essential that the user is able to see how far out edges extend within each category so they can conveniently visually compare how far out the edge pertaining to the salary is in relation to these statistics, giving them an indication of whether the player is worth their price.
-\end{abstract}
+\abstract{
+This paper attempts to describe how an NBA player's salary can be beneficial or detrimental to their team based on their performance in several statistical categories. This serves as a useful starting point for front office professionals employed by NBA teams who wish to make reasoned judgments about whether they should extend a player's contract or let them walk into free agency. After all, statistics in NBA basketball have become nuanced and sophisticated in the past decade, and teams such as the San Antonio Spurs have embraced their use and excel as a result. We believe that visualizations are the best method for truly understanding the effectiveness of an NBA player in the context of their salary since when these statistics are merely presented in their numerical form, people who are not mathematical experts (such as NBA General Managers, who are responsible for offering contracts to players) may not grasp the conclusion, or even worse, they may get the wrong impression about a certain player. Specifically, we believe that the radar chart is the most appropriate type of visualization to achieve this effect, since there are multiple statistical categories being judged by their relation to salary, which means it is essential that the user is able to see how far out edges extend within each category so they can conveniently visually compare how far out the edge pertaining to the salary is in relation to these statistics, giving them an indication of whether the player is worth their price.}
 
 
 \section*{Introduction}
@@ -62,7 +62,7 @@ The use of spider charts to visualize NBA statistics is somewhat prevalent in th
 Historically, academic publications in information visualization rarely tackle the topic of sports, much less spider charts devoted to NBA player statistics and their salary. However, over the past several years, this trend has begun to reverse, with conferences such as the IEEE VIS sponsoring workshops on sports data visualization, though the majority of these visualizations regard sports such as football, soccer, and baseball. Nevertheless, it is important for our purposes to survey the few visualizations within this subcategory of information visualization pertaining to the NBA that are present in academic research. \cite{chu}, a paper that introduces an interactive shot chart tool that allows the user to choose a player and see on a virtual basketball court the physical areas on the court where they perform best, presents the idea of using visualization to enhance our assessments of NBA players' in-game performances, but does not describe how tools like this could be used by NBA executives to make reasoned decisions about players' salaries. \cite{chen} proposes a new way of presenting post-game information, gravitating away from webcasts and towards "season level, game level, and session level" visualizations, but the purpose of this work is to augment the NBA fan's experience and, while this work does include some visualizations of performances that are relevant to our research, the purpose of such visualizations is for entertainment consumption and not for the maximization of team success. \cite{pagno} includes some visualizations that are similar to the ones we present in this work, including spider charts with steals, points, rebounds, assists, blocks, and turnovers as graph points of players such as Steve Nash, Deron Williams, and Rajon Rondo. However, these visualizations do not include player salary, which means they do not explore the financial implications of player performance that come in handy when making player personnel decisions. \cite{reyna} uses line graphs and bar graphs to visualize and compare team performances, but provides no application of the importance of such visualizations to executive decision making nor does it provide visualizations of individual player performance. A compelling sequence of different sports visualizations can be found courtesy of the Information Interfaces team at Georgia Tech University. One interactive visualization of NBA player and team data by this team, a snapshot of which is included below, was particularly influential to the software development necessary for our project since it was the only open source visualization of NBA data.
 \begin{figure}[h]
 \caption{A snapshot of an interactive visualization of basketball data.}
-\includegraphics[width=\textwidth]{georgiatech}
+\includegraphics[width=\linewidth]{georgiatech}
 \end{figure}
 \subsection{In Entertainment}
 
@@ -83,9 +83,8 @@ Historically, academic publications in information visualization rarely tackle t
 \section{Application Paper}
 \section{Conclusions and Future Work}
 
-\bibliography{biblio}{}
 \bibliographystyle{abbrv-doi}
-
+\bibliography{biblio}
 
 \end{document}
 

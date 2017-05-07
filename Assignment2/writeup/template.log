@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.7)  7 MAY 2017 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.7)  7 MAY 2017 15:37
 entering extended mode
 **./template.tex
 (template.tex
@@ -196,50 +196,57 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
 Enter file name: 
+
+! LaTeX Error: File `cite.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 
 Package hyperref Warning: Option `pdftex' has already been used,
-(hyperref)                setting the option has no effect on input line 44.
+(hyperref)                setting the option has no effect on input line 45.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 44.
+(hyperref)                setting the option has no effect on input line 45.
 
-Package hyperref Info: Option `pageanchor' set `true' on input line 44.
-Package hyperref Info: Option `plainpages' set `false' on input line 44.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 44.
+Package hyperref Info: Option `pageanchor' set `true' on input line 45.
+Package hyperref Info: Option `plainpages' set `false' on input line 45.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 45.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 44.
+(hyperref)                setting the option has no effect on input line 45.
 
-Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 44.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 45.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 44.
-Package hyperref Info: Option `breaklinks' set `true' on input line 44.
-Package hyperref Info: Option `colorlinks' set `false' on input line 44.
-Package hyperref Info: Option `nesting' set `true' on input line 44.
-Package hyperref Info: Option `linktocpage' set `true' on input line 44.
-(template.aux)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 45.
+Package hyperref Info: Option `breaklinks' set `true' on input line 45.
+Package hyperref Info: Option `colorlinks' set `false' on input line 45.
+Package hyperref Info: Option `nesting' set `true' on input line 45.
+Package hyperref Info: Option `linktocpage' set `true' on input line 45.
+No file template.aux.
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 46.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 47.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
@@ -255,7 +262,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box26
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 47.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -265,35 +272,31 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count98
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
-
-(template.out) (template.out
-! I can't write on file `template.pdf'.
-Please type another file name for output: 
-)
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
 \@outlinefile=\write3
 \openout3 = `template.out'.
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 49.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 50.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 49.
+(Font)              <7> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 49.
+(Font)              <5> on input line 50.
 
-<diamondrule.pdf, id=71, 213.79875pt x 12.045pt>
+<diamondrule.pdf, id=3, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
  <use diamondrule.pdf>
-Package pdftex.def Info: diamondrule.pdf used on input line 49.
+Package pdftex.def Info: diamondrule.pdf used on input line 50.
 (pdftex.def)             Requested size: 213.79822pt x 12.04495pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 49.
+(Font)              <8> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 49.
+(Font)              <6> on input line 50.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 55.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <9> not available
@@ -313,48 +316,47 @@ LaTeX Warning: Citation `pagno' on page 1 undefined on input line 62.
 
 LaTeX Warning: Citation `reyna' on page 1 undefined on input line 62.
 
-<pictures/georgiatech.jpg, id=72, 838.63312pt x 627.09282pt>
+<pictures/georgiatech.jpg, id=4, 838.63312pt x 627.09282pt>
 File: pictures/georgiatech.jpg Graphic file (type jpg)
 
 <use pictures/georgiatech.jpg>
 Package pdftex.def Info: pictures/georgiatech.jpg used on input line 65.
-(pdftex.def)             Requested size: 514.92374pt x 385.03305pt.
-
-Overfull \hbox (263.60475pt too wide) in paragraph at lines 65--66
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+(pdftex.def)             Requested size: 251.31898pt x 187.91878pt.
 
 No file template.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
- <./diamondrule.pdf>] [2
+ <./diamondrule.pdf> <./pictures/georgiatech.jpg>] [2
 
- <./pictures/georgiatech.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
-Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: FF5A48B6F36D9D4DC4F81A6238E8ECED;1049.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 
+
+Package rerunfilecheck Warning: File `template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `template.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  FF5A48B6F36D9D4DC4F81A6238E8ECED;1049.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 5010 strings out of 493333
- 74619 string characters out of 3139198
- 168484 words of memory out of 3000000
- 8480 multiletter control sequences out of 15000+200000
+ 4989 strings out of 493333
+ 74360 string characters out of 3139198
+ 168382 words of memory out of 3000000
+ 8465 multiletter control sequences out of 15000+200000
  22800 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,7n,28p,2667b,311s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -363,9 +365,9 @@ KTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on .pdf (2 pages, 135241 bytes).
+Output written on template.pdf (2 pages, 129967 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  22 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
