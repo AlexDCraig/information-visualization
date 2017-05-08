@@ -29,11 +29,11 @@
 
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
-\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2cm, minimum height=1cm,text centered, draw=black, fill=red!30]
-\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
-\tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
-\tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=green!30]
-\tikzstyle{arrow} = [thin,->,>=stealth]
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
 
 
 \PassOptionsToPackage{warn}{textcomp}  % to address font issues with \textrightarrow
@@ -84,33 +84,6 @@ Historically, academic publications in information visualization rarely tackle t
 \section{Method/Computational Model}
 \subsection{Method Overview}
 \emph{Figure 2} is a flow chart diagram of the components necessary to program an interface with three graphs. The first graph is a radar chart that corresponds to a player's assists per game (APG), steals per game (SPG), blocks per game (BPG), rebounds per game (RPG), and turnovers per game (TPG). The second graph is a bar chart that corresponds to a player's average points per game (PPG) versus the average player's average points per game. This bar chart is presented vertically. The third graph is the same as the second bar chart, except rather than presented vertically, it is presented horizontally. For each node in the flow chart diagram, there is a subsection within this section that corresponds to an explanation of how this step in the software engineering process was approached. 
-
-\begin{figure}[h]
-\caption{A flow chart diagram of our programming process.}
-\begin{tikzpicture}[node distance=1cm]
-
-\node (start) [startstop] {PHP Environment};
-\node (in1) [io, below of=start, yshift=-0.5cm] {CSV File of Statistics};
-\node (pro1) [process, below of=in1, yshift=-0.5cm] {Plug Statistics of Players into Database};
-\node (pro2) [process, right of=pro1, xshift=4cm] {Grab Player Statistics From Database};
-\node (in2) [io, below of=pro2, yshift=-0.5cm] {Access pChart API};
-\node (pro3) [process, below of=in2, yshift=-0.5cm] {Draw radar chart};
-\node (pro4) [process, right of=pro3, xshift=2cm] {Draw bar chart 1};
-\node (pro5) [process, right of=pro4, xshift=2cm] {Draw bar chart 2};
-\node (stop) [startstop, below of=pro5, yshift=-0.5cm] {Produce pCharts for viewing};
-
-\draw [arrow] (start) -- (in1);
-\draw [arrow] (in1) -- (pro1);
-\draw [arrow] (pro1) -- (pro2);
-\draw [arrow] (pro2) -- (in2);
-\draw [arrow] (in2) -- (pro3);
-\draw [arrow] (pro3) -- (pro4);
-\draw [arrow] (pro4) -- (pro5);
-\draw [arrow] (pro5) -- (stop);
-\end{tikzpicture}
-\end{figure}
-
-
 
 \subsection{PHP Environment}
 This node is the start block that represents how each subsequent step can be completed. In order to satisfy the following requirements, we must operate in a PHP environment.
@@ -194,6 +167,35 @@ Since this is a novel work in the realm of visualization research, future opport
 \newpage
 \bibliographystyle{abbrv-doi}
 \bibliography{template}
+
+\newpage
+\begin{figure}[h]
+\caption{A flow chart diagram of our programming process.}
+\begin{tikzpicture}[node distance=1cm]
+
+\node (start) [startstop] {PHP Environment};
+\node (in1) [io, below of=start, yshift=-0.5cm] {CSV File of Statistics};
+\node (pro1) [process, below of=in1, yshift=-0.5cm] {Plug Statistics of Players into Database};
+\node (pro2) [process, right of=pro1, xshift=4cm] {Grab Player Statistics From Database};
+\node (in2) [io, below of=pro2, yshift=-0.5cm] {Access pChart API};
+\node (pro3) [process, below of=in2, yshift=-0.5cm] {Draw radar chart};
+\node (pro4) [process, right of=pro3, xshift=2cm] {Draw bar chart 1};
+\node (pro5) [process, right of=pro4, xshift=2cm] {Draw bar chart 2};
+\node (stop) [startstop, below of=pro5, yshift=-0.5cm] {Produce pCharts for viewing};
+
+\draw [arrow] (start) -- (in1);
+\draw [arrow] (in1) -- (pro1);
+\draw [arrow] (pro1) -- (pro2);
+\draw [arrow] (pro2) -- (in2);
+\draw [arrow] (in2) -- (pro3);
+\draw [arrow] (pro3) -- (pro4);
+\draw [arrow] (pro4) -- (pro5);
+\draw [arrow] (pro5) -- (stop);
+\end{tikzpicture}
+\end{figure}
+
+
+
 
 \end{document}
 

@@ -4,17 +4,17 @@
 \BOOKMARK [2][]{subsection.5}{In Entertainment}{section.2}% 4
 \BOOKMARK [1][]{section.6}{Method/Computational Model}{}% 5
 \BOOKMARK [2][]{subsection.7}{Method Overview}{section.6}% 6
-\BOOKMARK [2][]{subsection.9}{PHP Environment}{section.6}% 7
-\BOOKMARK [2][]{subsection.10}{CSV File of Statistics}{section.6}% 8
-\BOOKMARK [2][]{subsection.11}{Plug Statistics of Players into Database}{section.6}% 9
-\BOOKMARK [2][]{subsection.27}{Grab Player Statistics From Database}{section.6}% 10
-\BOOKMARK [2][]{subsection.42}{Access pChart API}{section.6}% 11
-\BOOKMARK [2][]{subsection.52}{Draw radar chart, bar chart 1, bar chart 2}{section.6}% 12
-\BOOKMARK [2][]{subsection.53}{Produce pCharts for viewing}{section.6}% 13
-\BOOKMARK [2][]{subsection.54}{Parameters}{section.6}% 14
-\BOOKMARK [1][]{section.55}{Implementation}{}% 15
-\BOOKMARK [1][]{section.56}{Results and Performance}{}% 16
-\BOOKMARK [2][]{subsection.57}{Results}{section.56}% 17
-\BOOKMARK [2][]{subsection.59}{Performance Analysis}{section.56}% 18
-\BOOKMARK [1][]{section.60}{Conclusions and Future Work}{}% 19
-\BOOKMARK [2][]{subsection.61}{Future Work}{section.60}% 20
+\BOOKMARK [2][]{subsection.8}{PHP Environment}{section.6}% 7
+\BOOKMARK [2][]{subsection.9}{CSV File of Statistics}{section.6}% 8
+\BOOKMARK [2][]{subsection.10}{Plug Statistics of Players into Database}{section.6}% 9
+\BOOKMARK [2][]{subsection.26}{Grab Player Statistics From Database}{section.6}% 10
+\BOOKMARK [2][]{subsection.41}{Access pChart API}{section.6}% 11
+\BOOKMARK [2][]{subsection.51}{Draw radar chart, bar chart 1, bar chart 2}{section.6}% 12
+\BOOKMARK [2][]{subsection.52}{Produce pCharts for viewing}{section.6}% 13
+\BOOKMARK [2][]{subsection.53}{Parameters}{section.6}% 14
+\BOOKMARK [1][]{section.54}{Implementation}{}% 15
+\BOOKMARK [1][]{section.55}{Results and Performance}{}% 16
+\BOOKMARK [2][]{subsection.56}{Results}{section.55}% 17
+\BOOKMARK [2][]{subsection.58}{Performance Analysis}{section.55}% 18
+\BOOKMARK [1][]{section.59}{Conclusions and Future Work}{}% 19
+\BOOKMARK [2][]{subsection.60}{Future Work}{section.59}% 20
