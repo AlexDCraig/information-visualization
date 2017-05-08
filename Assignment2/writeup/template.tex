@@ -87,7 +87,7 @@ The following is a flow chart diagram of the components necessary to program an 
 \node (start) [startstop] {PHP Environment};
 \node (in1) [io, below of=start, yshift=-0.5cm] {CSV File of Statistics};
 \node (pro1) [process, below of=in1, yshift=-0.5cm] {Plug Statistics of Players into Database};
-\node (pro2) [process, right of=pro1, xshift=4cm] {Grab Player Statistics From Database};
+\node (pro2) [process, right of=pro1, xshift=3cm] {Grab Player Statistics From Database};
 \node (in2) [io, below of=pro2, yshift=-0.5cm] {Access pChart API};
 \node (pro3) [process, below of=in2, yshift=-0.5cm] {Draw radar chart};
 \node (pro4) [process, right of=pro3, xshift=2cm] {Draw bar chart 1};
