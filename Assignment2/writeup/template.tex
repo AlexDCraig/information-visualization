@@ -145,7 +145,6 @@ Since our visualization module uses static data that we gathered via a basketbal
 In implementing our visualization software, we were surprised to see how many different options for packages there were. Initially, we planned on using Python embedded in HTML in order to use the pyfigure package, but we eventually landed on using pCharts due to its ability to be implemented in a PHP context. We also wanted to include salary in our radar chart but found it virtually impossible to find a reasonable way to describe statistics and salary using the same units due to their large difference in size. 
 \section{Results and Performance}
 \subsection{Results}
-\subsection{Images}
 \begin{figure}[h]
 \caption{A visualization of James Harden's performance in the NBA.}
 \includegraphics[width=\linewidth]{JamesHarden.png}
@@ -154,7 +153,9 @@ We can see in \emph{Figure 1} an example of what our module produces. In the lef
 \subsection{Performance Analysis}
 Since our module does not make use of I/O dependent on the user, and because our data set is reasonably small, a performance analysis of the generation of charts is not necessary.
 \section{Conclusions and Future Work}
-
+From our survey of the current visualization research landscape, we see that no other publications have used graphs like radar charts in order to analyze the performance of an NBA player as well as the worth of the player, as judged by salary. In fact, our survey shows us that using visualization techniques to effectively describe NBA players is oddly underdeveloped in the visualization research community. As such, we hope that the novelty of our module inspires others to make NBA visualizations a more robust field. The value of such visualizations are that NBA executives can cite these graphs of players in order to make reasoned judgments on how much they should spend on a specific player. Naturally, since each team must operate within a salary cap, the ability to use visualizations such as these in order to make financially sound decisions is a major advantage to any team that chooses to embrace it.
+\subsection{Future Work}
+Since this is a novel work in the realm of visualization research, future opportunities to expand the field of NBA visualization using this as a platform to build off of are plentiful. Visualizations that look into more advanced statistics could allow more concrete conclusions about a player's worth. Additionally, a module that allows for a user to select any player in the NBA and generates these graphs for him would be a big step forward. A wider variety of graphs and charts dedicated to each player would also be helpful in drawing conclusions.
 \newpage
 \bibliographystyle{abbrv-doi}
 \bibliography{template}
