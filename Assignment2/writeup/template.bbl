@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{chen}
+W.~Chen, T.~Lao, J.~Xia, X.~Huang, B.~Zhu, W.~Hu, and H.~Guan.
+\newblock Gameflow: Narrative visualization of nba basketball games.
+\newblock {\em Trans. Multi.}, 18(11):2247--2256, Nov. 2016. doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TMM\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2016\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2614221}}
+
+
+\bibitem{chu}
+S.~Chu.
+\newblock Information visualization in the nba: The shot chart.
+\newblock {\em Association for Computing Machinery}.
+
+\bibitem{reyna}
+K.~Nijhawan, I.~Proulx, and J.~Reyna.
+\newblock A simple visualization tool for nba statistics.
+
+\bibitem{pagno}
+B.~Pagno, L.~Guedes, C.~Freitas, and L.~Nedel.
+\newblock Nbavis: Visualizing national basketball association information.
+
+\end{thebibliography}
