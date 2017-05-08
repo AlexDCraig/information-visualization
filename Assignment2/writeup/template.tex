@@ -69,40 +69,14 @@ Basketball players employed by the National Basketball Association (NBA) make a 
 \section{Related Work}
 The use of spider charts to visualize NBA statistics is somewhat prevalent in the realm of entertainment, but not in information visualization research. 
 \subsection{In Information Visualization Research}
-Historically, academic publications in information visualization rarely tackle the topic of sports, much less spider charts devoted to NBA player statistics and their salary. However, over the past several years, this trend has begun to reverse, with conferences such as the IEEE VIS sponsoring workshops on sports data visualization, though the majority of these visualizations regard sports such as football, soccer, and baseball. Nevertheless, it is important for our purposes to survey the few visualizations within this subcategory of information visualization pertaining to the NBA that are present in academic research. \cite{chu}, a paper that introduces an interactive shot chart tool that allows the user to choose a player and see on a virtual basketball court the physical areas on the court where they perform best, presents the idea of using visualization to enhance our assessments of NBA players' in-game performances, but does not describe how tools like this could be used by NBA executives to make reasoned decisions about players' salaries. \cite{chen} proposes a new way of presenting post-game information, gravitating away from webcasts and towards "season level, game level, and session level" visualizations, but the purpose of this work is to augment the NBA fan's experience and, while this work does include some visualizations of performances that are relevant to our research, the purpose of such visualizations is for entertainment consumption and not for the maximization of team success. \cite{pagno} includes some visualizations that are similar to the ones we present in this work, including spider charts with steals, points, rebounds, assists, blocks, and turnovers as graph points of players such as Steve Nash, Deron Williams, and Rajon Rondo. However, these visualizations do not include player salary, which means they do not explore the financial implications of player performance that come in handy when making player personnel decisions. \cite{reyna} uses line graphs and bar graphs to visualize and compare team performances, but provides no application of the importance of such visualizations to executive decision making nor does it provide visualizations of individual player performance. A compelling sequence of different sports visualizations can be found courtesy of the Information Interfaces team at Georgia Tech University. One interactive visualization of NBA player and team data by this team, a snapshot of which is included below, was particularly influential to the software development necessary for our project since it was the only open source visualization of NBA data.
-\begin{figure}[h]
-\caption{A snapshot of an interactive visualization of basketball data.}
-\includegraphics[width=\linewidth]{georgiatech.jpg}
-\end{figure}
+Historically, academic publications in information visualization rarely tackle the topic of sports, much less spider charts devoted to NBA player statistics and their salary. However, over the past several years, this trend has begun to reverse, with conferences such as the IEEE VIS sponsoring workshops on sports data visualization, though the majority of these visualizations regard sports such as football, soccer, and baseball. Nevertheless, it is important for our purposes to survey the few visualizations within this subcategory of information visualization pertaining to the NBA that are present in academic research. \cite{chu}, a paper that introduces an interactive shot chart tool that allows the user to choose a player and see on a virtual basketball court the physical areas on the court where they perform best, presents the idea of using visualization to enhance our assessments of NBA players' in-game performances, but does not describe how tools like this could be used by NBA executives to make reasoned decisions about players' salaries. \cite{chen} proposes a new way of presenting post-game information, gravitating away from webcasts and towards "season level, game level, and session level" visualizations, but the purpose of this work is to augment the NBA fan's experience and, while this work does include some visualizations of performances that are relevant to our research, the purpose of such visualizations is for entertainment consumption and not for the maximization of team success. \cite{pagno} includes some visualizations that are similar to the ones we present in this work, including spider charts with steals, points, rebounds, assists, blocks, and turnovers as graph points of players such as Steve Nash, Deron Williams, and Rajon Rondo. However, these visualizations do not include player salary, which means they do not explore the financial implications of player performance that come in handy when making player personnel decisions. \cite{reyna} uses line graphs and bar graphs to visualize and compare team performances, but provides no application of the importance of such visualizations to executive decision making nor does it provide visualizations of individual player performance. A compelling sequence of different sports visualizations can be found courtesy of the Information Interfaces team at Georgia Tech University. One interactive visualization of NBA player and team data by this team, a snapshot of which is included in \emph{Figure 1} of the appendix, was particularly influential to the software development necessary for our project since it was the only open source visualization of NBA data.
 \subsection{In Entertainment}
 
 
 
 \section{Method/Computational Model}
 \subsection{Method Overview}
-The following is a flow chart diagram of the components necessary to program an interface with three graphs. The first graph is a radar chart that corresponds to a player's assists per game (APG), steals per game (SPG), blocks per game (BPG), rebounds per game (RPG), and turnovers per game (TPG). The second graph is a bar chart that corresponds to a player's average points per game (PPG) versus the average player's average points per game. This bar chart is presented vertically. The third graph is the same as the second bar chart, except rather than presented vertically, it is presented horizontally. 
-
-\begin{tikzpicture}[node distance=2cm]
-
-\node (start) [startstop] {PHP Environment};
-\node (in1) [io, below of=start, yshift=-0.5cm] {CSV File of Statistics};
-\node (pro1) [process, below of=in1, yshift=-0.5cm] {Plug Statistics of Players into Database};
-\node (pro2) [process, right of=pro1, xshift=3cm] {Grab Player Statistics From Database};
-\node (in2) [io, below of=pro2, yshift=-0.5cm] {Access pChart API};
-\node (pro3) [process, below of=in2, yshift=-0.5cm] {Draw radar chart};
-\node (pro4) [process, right of=pro3, xshift=2cm] {Draw bar chart 1};
-\node (pro5) [process, right of=pro4, xshift=2cm] {Draw bar chart 2};
-\node (stop) [startstop, below of=pro5, yshift=-0.5cm] {Produce pCharts for viewing};
-
-\draw [arrow] (start) -- (in1);
-\draw [arrow] (in1) -- (pro1);
-\draw [arrow] (pro1) -- (pro2);
-\draw [arrow] (pro2) -- (in2);
-\draw [arrow] (in2) -- (pro3);
-\draw [arrow] (pro3) -- (pro4);
-\draw [arrow] (pro4) -- (pro5);
-\draw [arrow] (pro5) -- (stop);
-\end{tikzpicture}
+\emph{Figure 2} in the appendix is a flow chart diagram of the components necessary to program an interface with three graphs. The first graph is a radar chart that corresponds to a player's assists per game (APG), steals per game (SPG), blocks per game (BPG), rebounds per game (RPG), and turnovers per game (TPG). The second graph is a bar chart that corresponds to a player's average points per game (PPG) versus the average player's average points per game. This bar chart is presented vertically. The third graph is the same as the second bar chart, except rather than presented vertically, it is presented horizontally. 
 
 \subsection{Stage 1}
 \subsection{Stage n}
@@ -120,6 +94,39 @@ The following is a flow chart diagram of the components necessary to program an 
 \newpage
 \bibliographystyle{abbrv-doi}
 \bibliography{template}
+
+\newpage
+\appendix
+\begin{figure}[h]
+\caption{A snapshot of an interactive visualization of basketball data.}
+\includegraphics[width=\linewidth]{georgiatech.jpg}
+\end{figure}
+
+\begin{figure}[h]
+\caption{A flow chart diagram of our programming process.}
+\begin{tikzpicture}[node distance=2cm]
+
+\node (start) [startstop] {PHP Environment};
+\node (in1) [io, below of=start, yshift=-0.5cm] {CSV File of Statistics};
+\node (pro1) [process, below of=in1, yshift=-0.5cm] {Plug Statistics of Players into Database};
+\node (pro2) [process, right of=pro1, xshift=4cm] {Grab Player Statistics From Database};
+\node (in2) [io, below of=pro2, yshift=-0.5cm] {Access pChart API};
+\node (pro3) [process, below of=in2, yshift=-0.5cm] {Draw radar chart};
+\node (pro4) [process, right of=pro3, xshift=2cm] {Draw bar chart 1};
+\node (pro5) [process, right of=pro4, xshift=2cm] {Draw bar chart 2};
+\node (stop) [startstop, below of=pro5, yshift=-0.5cm] {Produce pCharts for viewing};
+
+\draw [arrow] (start) -- (in1);
+\draw [arrow] (in1) -- (pro1);
+\draw [arrow] (pro1) -- (pro2);
+\draw [arrow] (pro2) -- (in2);
+\draw [arrow] (in2) -- (pro3);
+\draw [arrow] (pro3) -- (pro4);
+\draw [arrow] (pro4) -- (pro5);
+\draw [arrow] (pro5) -- (stop);
+\end{tikzpicture}
+\end{figure}
+
 
 \end{document}
 
