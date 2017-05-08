@@ -19,6 +19,8 @@
   \DeclareGraphicsExtensions{.eps}     % for pure latex we expect eps files
 \fi%
 
+\AtEndDocument{\par\leavevmode}
+
 %% it is recomended to use ``\autoref{sec:bla}'' instead of ``Fig.~\ref{sec:bla}''
 \graphicspath{ {pictures/} } % where to search for the images
 
