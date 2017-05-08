@@ -1,13 +1,13 @@
 <?php
 
-$user = 'root';
-$pass ='' ; 
-$db = 'nba';
+$host = 'classmysql.engr.oregonstate.edu';
+$user = 'cs340_nguyenau';
+$pass ='5840' ; 
+$db = 'cs340_nguyenau';
 
-mysql_connect('localhost',$user,$pass);
+mysql_connect($host,$user,$pass);
 
 mysql_select_db($db);
-echo " database is connected". "<br/>";
 
 $data = array(array('name'=>'','age'=>'','team'=>'','games'=>'','wins'=>'','loss'=>'','ppg'=>'','bpg'=>'','rpg'=>'','apg'=>'','spg'=>'','tpg'=>'','fpg'=>''));
 
@@ -35,6 +35,7 @@ foreach ($parsed_data as $key => $value) {
 		$data[$key]['apg'] = $value[21];
 		$data[$key]['tpg'] = $value[22];
 		$data[$key]['spg'] = $value[23];
+
 /*
 		if($key == 10){
 		
@@ -61,7 +62,7 @@ $apg = mysql_escape_string($value['apg']);
 $tpg = mysql_escape_string($value['tpg']);
 $spg = mysql_escape_string($value['spg']);
 
-$ins_sql = "INSERT INTO player_info (name,age,team_name,wins,loss,ppg,bpg,rpg,apg,tpg,spg,games) VALUES ('$name','$age','$team','$wins','$loss','$ppg','$bpg','$rpg','$apg','$tpg','$spg','$games')";
+$ins_sql = "INSERT INTO player_info (name,age,team_name,wins,loss,ppg,bpg,rpg,apg,tpg,spg,games,salary) VALUES ('$name','$age','$team','$wins','$loss','$ppg','$bpg','$rpg','$apg','$tpg','$spg','$games','25.4')";
 
 $result = mysql_query($ins_sql) or trigger_error(mysql_error());
 	
