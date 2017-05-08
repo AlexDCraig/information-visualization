@@ -1,20 +1,20 @@
 \BOOKMARK [1][]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][]{section.2}{Related Work}{}% 2
 \BOOKMARK [2][]{subsection.3}{In Information Visualization Research}{section.2}% 3
-\BOOKMARK [2][]{subsection.4}{In Entertainment}{section.2}% 4
-\BOOKMARK [1][]{section.5}{Method/Computational Model}{}% 5
-\BOOKMARK [2][]{subsection.6}{Method Overview}{section.5}% 6
-\BOOKMARK [2][]{subsection.7}{PHP Environment}{section.5}% 7
-\BOOKMARK [2][]{subsection.8}{CSV File of Statistics}{section.5}% 8
-\BOOKMARK [2][]{subsection.9}{Plug Statistics of Players into Database}{section.5}% 9
-\BOOKMARK [2][]{subsection.25}{Grab Player Statistics From Database}{section.5}% 10
-\BOOKMARK [2][]{subsection.40}{Access pChart API}{section.5}% 11
-\BOOKMARK [2][]{subsection.50}{Draw radar chart, bar chart 1, bar chart 2}{section.5}% 12
-\BOOKMARK [2][]{subsection.51}{Produce pCharts for viewing}{section.5}% 13
-\BOOKMARK [2][]{subsection.52}{Parameters}{section.5}% 14
-\BOOKMARK [1][]{section.53}{Implementation}{}% 15
-\BOOKMARK [1][]{section.54}{Results and Performance}{}% 16
-\BOOKMARK [2][]{subsection.55}{Results}{section.54}% 17
-\BOOKMARK [2][]{subsection.57}{Performance Analysis}{section.54}% 18
-\BOOKMARK [1][]{section.58}{Conclusions and Future Work}{}% 19
-\BOOKMARK [2][]{subsection.59}{Future Work}{section.58}% 20
+\BOOKMARK [2][]{subsection.5}{In Entertainment}{section.2}% 4
+\BOOKMARK [1][]{section.6}{Method/Computational Model}{}% 5
+\BOOKMARK [2][]{subsection.7}{Method Overview}{section.6}% 6
+\BOOKMARK [2][]{subsection.8}{PHP Environment}{section.6}% 7
+\BOOKMARK [2][]{subsection.9}{CSV File of Statistics}{section.6}% 8
+\BOOKMARK [2][]{subsection.10}{Plug Statistics of Players into Database}{section.6}% 9
+\BOOKMARK [2][]{subsection.26}{Grab Player Statistics From Database}{section.6}% 10
+\BOOKMARK [2][]{subsection.41}{Access pChart API}{section.6}% 11
+\BOOKMARK [2][]{subsection.51}{Draw radar chart, bar chart 1, bar chart 2}{section.6}% 12
+\BOOKMARK [2][]{subsection.52}{Produce pCharts for viewing}{section.6}% 13
+\BOOKMARK [2][]{subsection.53}{Parameters}{section.6}% 14
+\BOOKMARK [1][]{section.54}{Implementation}{}% 15
+\BOOKMARK [1][]{section.55}{Results and Performance}{}% 16
+\BOOKMARK [2][]{subsection.56}{Results}{section.55}% 17
+\BOOKMARK [2][]{subsection.58}{Performance Analysis}{section.55}% 18
+\BOOKMARK [1][]{section.59}{Conclusions and Future Work}{}% 19
+\BOOKMARK [2][]{subsection.60}{Future Work}{section.59}% 20
