@@ -141,19 +141,16 @@ To draw our charts, we utilized pChart's functionalities. Let us explain the pro
 This node is the completion of the process of generating charts, a result of compiling the programs outlined in the previous steps. Three charts corresponding to a player are presented to the user.
 \subsection{Parameters}
 Since our visualization module uses static data that we gathered via a basketball statistics website, our parameters to pChart functions are unchanging. 
+\section{Implementation}
+In implementing our visualization software, we were surprised to see how many different options for packages there were. Initially, we planned on using Python embedded in HTML in order to use the pyfigure package, but we eventually landed on using pCharts due to its ability to be implemented in a PHP context. We also wanted to include salary in our radar chart but found it virtually impossible to find a reasonable way to describe statistics and salary using the same units due to their large difference in size. 
+\section{Results and Performance}
+\subsection{Results}
 \subsection{Images}
 \begin{figure}[h]
 \caption{A visualization of Jordan Clarkson's performance in the NBA.}
 \includegraphics[width=\linewidth]{JordanClarkson.png}
 \end{figure}
-\subsection{Enhancements}
-\section{Implementation}
-In implementing our visualization software, we were surprised to see how many different options for packages there were. Initially, we planned on using Python embedded in HTML in order to use the pyfigure package, but we eventually landed on using pCharts due to its ability to be implemented in a PHP context. 
-\section{Results and Performance}
-\subsection{Results}
 \subsection{Performance Analysis}
-\subsection{Movies and Supplementary Material}
-\section{Application Paper}
 \section{Conclusions and Future Work}
 
 \newpage
