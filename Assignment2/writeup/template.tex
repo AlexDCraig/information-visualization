@@ -177,11 +177,11 @@ Since this is a novel work in the realm of visualization research, future opport
 \node (start) [startstop] {PHP Environment};
 \node (in1) [io, below of=start, yshift=-0.5cm] {CSV File of Statistics};
 \node (pro1) [process, below of=in1, yshift=-0.5cm] {Plug Statistics of Players into Database};
-\node (pro2) [process, right of=pro1, xshift=6cm] {Grab Player Statistics From Database};
+\node (pro2) [process, right of=pro1, xshift=5cm] {Grab Player Statistics From Database};
 \node (in2) [io, below of=pro2, yshift=-0.5cm] {Access pChart API};
 \node (pro3) [process, below of=in2, yshift=-0.5cm] {Draw radar chart};
-\node (pro4) [process, right of=pro3, xshift=3cm] {Draw bar chart 1};
-\node (pro5) [process, right of=pro4, xshift=3cm] {Draw bar chart 2};
+\node (pro4) [process, right of=pro3, xshift=2.5cm] {Draw bar chart 1};
+\node (pro5) [process, right of=pro4, xshift=2.5cm] {Draw bar chart 2};
 \node (stop) [startstop, below of=pro5, yshift=-0.5cm] {Produce pCharts for viewing};
 
 \draw [arrow] (start) -- (in1);
