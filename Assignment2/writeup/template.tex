@@ -93,12 +93,16 @@ mysql_select_db($db);
 \end{lstlisting}
 To parse our .csv file:
 \begin{lstlisting}
-$parsed_data = array_map('str_getcsv',file('Document2.csv'));
+$parsed_data = array_map('str_getcsv',
+file('Document2.csv'));
 \end{lstlisting}
 Finally, to place the data into a table:
 \begin{lstlisting}
-$ins\_sql = "INSERT INTO player\_info (name,age,team\_name,wins,loss,ppg,bpg,rpg,apg,tpg,spg,games) VALUES ('$name','$age','$team','$wins','$loss','$ppg','$bpg','$rpg','$apg','$tpg','$spg','$games')";
-
+$ins_sql = "INSERT INTO player_info (name,age
+,team_name,wins,loss,ppg,bpg,rpg,apg,tpg,spg,
+games) VALUES ('$name','$age','$team','$wins'
+,'$loss','$ppg','$bpg','$rpg','$apg','$tpg',
+'$spg','$games')";
 \end{lstlisting}
 
 \subsection{Grab Player Statistics From Database}
