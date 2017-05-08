@@ -21,6 +21,7 @@ if(isset($_SESSION['name'])){
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 <style>
+
 body {background-color: powderblue;}
 .list-group-item {
     padding: 3px 10px;
@@ -32,25 +33,12 @@ body {background-color: powderblue;}
 
 <div class="container-fluid">
   <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-4">
   <h1 style="text-align: center"> NBA PLAYER STATS</h1>
   </div>
-  <div>
- 
-  <h2>Player Search Examples</h2>
-  <ul class="list-group">
-  <li class="list-group-item">James Harden</li>
-  <li class="list-group-item">Danilo Gallinari</li>
-  <li class="list-group-item">Jordan Clarkson</li>
-  <li class="list-group-item">Jeremy Lin</li>
-  <li class="list-group-item">Jordan Crawford</li>
-</ul>
- 
-  </div>
-  </div>
-  <div style="padding-top:100px;" class="row">
+  <div class="col-sm-4" style="padding-top:120px;">
+
  <form action="vis_proj.php" method="GET">
-  <div class="col-sm-10">
   <div class="form-group" >
   
     <label for="name">Player Name:</label>
@@ -59,12 +47,23 @@ body {background-color: powderblue;}
   </div>
   </div>
   </form>
-  
-  
-  <div class="container">
-  <div class="col-sm-5">
-<img src= <?php if(isset($_SESSION['name'])) {echo $_SESSION['name'].'.png';} else{echo "";}?> class="pull-right img-responsive" />
-</div>
+   <div class="col-md-4">
+  <h2>Player Search Examples</h2>
+  <ul class="list-group">
+  <li class="list-group-item">James Harden</li>
+  <li class="list-group-item">Danilo Gallinari</li>
+  <li class="list-group-item">Jordan Clarkson</li>
+  <li class="list-group-item">Jeremy Lin</li>
+  <li class="list-group-item">Jordan Crawford</li>
+</ul>
+
+ </div> 
+  </div>
+
+  <div style="padding-top:10px;" class="row">
+   
+  <div class="col-sm-12">
+<img src= <?php if(isset($_SESSION['name'])) {echo $_SESSION['name'].'.png';} else{echo "nba_default.png";}?> class="pull-right img-responsive"  />
 </div>
 </div>
 
