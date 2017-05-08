@@ -4,11 +4,6 @@ The top-level auxiliary file: template.aux
 The style file: abbrv-doi.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: template.bib
-Warning--to sort, need author or key in buc
-Warning--to sort, need author or key in vis
-Warning--to sort, need author or key in stu
-Warning--to sort, need author or key in swe
-Warning--to sort, need author or key in mia
 Warning--empty year in chu
 Warning--empty journal in reyna
 Warning--empty year in reyna
@@ -16,34 +11,34 @@ Warning--empty journal in pagno
 Warning--empty year in pagno
 You've used 10 entries,
             2598 wiz_defined-function locations,
-            642 strings with 5847 characters,
-and the built_in function-call counts, 3085 in all, are:
-= -- 435
-> -- 98
+            648 strings with 5901 characters,
+and the built_in function-call counts, 3314 in all, are:
+= -- 456
+> -- 128
 < -- 48
-+ -- 93
-- -- 33
-* -- 152
-:= -- 449
-add.period$ -- 17
++ -- 103
+- -- 43
+* -- 153
+:= -- 535
+add.period$ -- 22
 call.type$ -- 10
-change.case$ -- 46
+change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 20
+cite$ -- 15
 duplicate$ -- 83
-empty$ -- 228
-format.name$ -- 32
-if$ -- 727
+empty$ -- 223
+format.name$ -- 42
+if$ -- 753
 int.to.chr$ -- 0
 int.to.str$ -- 10
 missing$ -- 4
-newline$ -- 46
-num.names$ -- 10
-pop$ -- 86
+newline$ -- 51
+num.names$ -- 20
+pop$ -- 87
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 41
 quote$ -- 0
-skip$ -- 78
+skip$ -- 76
 stack$ -- 0
 substring$ -- 133
 swap$ -- 8
@@ -51,8 +46,8 @@ text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 40
-warning$ -- 10
-while$ -- 14
+warning$ -- 5
+while$ -- 24
 width$ -- 12
-write$ -- 100
-(There were 10 warnings)
+write$ -- 111
+(There were 5 warnings)
