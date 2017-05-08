@@ -1,18 +1,48 @@
 <?php
+if (!is_writable(session_save_path())) {
+    echo 'Session path "'.session_save_path().'" is not writable for PHP!'; 
+}
+else{
+	
+ini_set('session.save_path',getcwd().'/nba_sessions');}
+
 session_start();
 
+$path = dirname($_SERVER['PHP_SELF']);
+
+if(TRUE){
+
+$host = 'classmysql.engr.oregonstate.edu';
+$user = 'cs340_nguyenau';
+$pass ='5840' ; 
+$db = 'cs340_nguyenau';
 if(isset($_GET['name'])&&$_GET['name']!=""){
+	$name = $_GET['name'];
+}
+else
+{
+	$name = "James Harden";
+	$_GET['name'] = "James Harden";
+}
 
 
-$user = 'root';
-$pass ='' ; 
-$db = 'nba';
-$name = $_GET['name'];
-mysql_connect('localhost',$user,$pass);
+if($conn= mysql_connect($host,$user,$pass)){
+	
 
-mysql_select_db($db);
-echo " database is connected". "<br/>";
+}
+else{
+		//header("Location:".$path."/test.php");
+		//die();
+
+}
+
+if($select = mysql_select_db($db)){
+	//echo "database selected";
+}
+else{
+	//echo "database is not connected";
  /* pChart library inclusions */
+}
 
 include("pChart2.1.4/pChart2.1.4/class/pData.class.php");
 
@@ -32,7 +62,7 @@ $MyData = new pData();
  
 /* Create the pChart object */
 
-$myPicture = new pImage(1520,420,$MyData);
+$myPicture = new pImage(1500,400,$MyData);
 
 /* Draw a solid background */
 
@@ -60,9 +90,12 @@ $myPicture->drawRectangle(0,0,1519,419,array("R"=>0,"G"=>0,"B"=>0));
 
 $myPicture->setFontProperties(array("FontName"=>"pChart2.1.4/pChart2.1.4/fonts/Silkscreen.ttf","FontSize"=>6));
 
-$myPicture->drawText(10,13,"NBA STATS ".$_GET['name'],array("R"=>255,"G"=>255,"B"=>255));
+$myPicture->drawText(10,13,"NBA STATS ".$_GET['name'],array("R"=>255,"G"=>255,"B"=>255,"FontSize"=>10));
 
- 
+$myPicture->drawText(100,50,"AVERAGE PPG COMPARISON FOR ".$_GET['name'],array("R"=>0,"G"=>0,"B"=>0,"FontSize"=>15));
+
+$myPicture->drawText(850,50,"STATS COMPARISON FOR ".$_GET['name'],array("R"=>0,"G"=>0,"B"=>0,"FontSize"=>15));
+
 
 /* Define general drawing parameters */
 
@@ -99,18 +132,17 @@ function draw_bar_chart($name,$avg,$MyData,$myPicture){
 
 $MyData->addPoints(array(player_ppg($name),$avg),"BarPlot");
 
-
+$MyData->setSerieDescription("BarPlot",$name." AVERAGE VS All Players PPG AVERAGE, PPG - Points Per Game" );
 //unset($MyData->Data['Player_Stats']);
 
 unset($MyData->Data['Abscissa']);
-$MyData->addPoints(array("Player ppg","Avg ppg"),"Label2");
+$MyData->addPoints(array($name." ppg","Avg ppg"),"Label2");
 $MyData->setAbscissa("Label2");	
 
 $myPicture->setGraphArea(100,150,400,350);
 $myPicture->drawFilledRectangle(100,150,400,350,array("R"=>255,"G"=>255,"B"=>255,"Surrounding"=>-200,"Alpha"=>10));
 
-//$myPicture->drawScale(array("DrawSubTicks"=>TRUE));
-//$scaleSettings = array("GridR"=>200,"GridG"=>200,"GridB"=>200,"DrawSubTicks"=>TRUE,"CycleBackground"=>TRUE);
+
 $AxisBoundaries = array(0=>array("Min"=>0,"Max"=>80));
 $scaleSettings  = array("GridR"=>200,"GridG"=>200,"GridB"=>200,"DrawSubTicks"=>TRUE,"CycleBackground"=>TRUE,"Mode"=>SCALE_MODE_MANUAL, "ManualScale"=>$AxisBoundaries);
 
@@ -122,7 +154,7 @@ $myPicture->setFontProperties(array("FontName"=>"pChart2.1.4/pChart2.1.4/fonts/p
 
 $myPicture->drawBarChart(array("DisplayValues"=>TRUE,"DisplayColor"=>DISPLAY_AUTO,"Rounded"=>TRUE,"Surrounding"=>60));
 
-$myPicture->drawLegend(150,380,array("Style"=>LEGEND_BOX,"Mode"=>LEGEND_HORIZONTAL));
+$myPicture->drawLegend(120,380,array("Style"=>LEGEND_BOX,"Mode"=>LEGEND_HORIZONTAL,"FontSize"=>10));
 
 
 }
@@ -136,8 +168,11 @@ $myPicture->drawLegend(150,380,array("Style"=>LEGEND_BOX,"Mode"=>LEGEND_HORIZONT
  	$result = mysql_fetch_assoc($result);
 
  	$player_data = array($result['rpg'],$result['bpg'],$result['tpg'],$result['apg'],$result['spg']);
- 
- 	
+
+	if($player_data[0] == NULL){
+		var_dump("Submit The Full Name in the Right Format");
+		exit;
+	} 	
  	return $player_data;
 
  }
@@ -183,7 +218,7 @@ $salaries = player_salary($name);
 
 $MyData->addPoints($player_data,"Player_Stats");
 //$MyData->setSerieDrawable("BarPlot", FALSE);
-$MyData->setSerieDescription("Player_Stats","Player Statistics");
+$MyData->setSerieDescription("Player_Stats","Player Statistics- \n\n\n APG - Assists per Game \n\n\n SPG - Steals per Game \n\n\n BPG - Blocks per Game \n\n\n RPG - Rebounds per Game \n\n\n TPG - Throws per Game");
 
 function draw_horizontal_chart($salaries,$values,$MyData,$myPicture){
 
@@ -238,13 +273,13 @@ $MyData->addPoints(array("BPG","RPG","TPG","APG","SPG"),"Labels");
 $MyData->setAbscissa("Labels");
 
 
-$myPicture->setGraphArea(540,80,1000,400);
+$myPicture->setGraphArea(740,80,1100,400);
 
 
 $Options = array("Layout"=>RADAR_LAYOUT_CIRCLE, "LabelPos"=>RADAR_LABELS_HORIZONTAL, "BackgroundGradient"=>array("StartR"=>255,"StartG"=>255,"StartB"=>255,"StartAlpha"=>50,"EndR"=>32,"EndG"=>109,"EndB"=>174,"EndAlpha"=>30));
  
 $SplitChart->drawRadar($myPicture,$MyData,$Options);
-$myPicture->drawLegend(950,350,array("Style"=>LEGEND_BOX,"Mode"=>LEGEND_HORIZONTAL));
+$myPicture->drawLegend(1100,150,array("Style"=>LEGEND_BOX,"Mode"=>LEGEND_HORIZONTAL,"FontSize"=> 20));
 
 }
 
@@ -256,7 +291,7 @@ draw_bar_chart($name,$avg,$MyData,$myPicture);
 
 $MyData->setSerieDrawable("player_data", FALSE);
 $MyData->setSerieDrawable("BarPlot",FALSE);
-draw_horizontal_chart($salaries,$avg,$MyData,$myPicture);
+//draw_horizontal_chart($salaries,$avg,$MyData,$myPicture);
 
 
 /* Write down the legend */
@@ -267,12 +302,14 @@ draw_horizontal_chart($salaries,$avg,$MyData,$myPicture);
 $text = preg_replace('/\s+/', '', $name);
 $_SESSION['name'] = $text;
 
+
+
 /* Render the picture */
 $myPicture->Render($text.'.png');
-header("Location:test.php");
-
+header("Location:".$path."/proj.php");
+die();
 }
 
 else{
-	header("Location:test.php");
+	header("Location:".getcwd()."/proj.php");
 }

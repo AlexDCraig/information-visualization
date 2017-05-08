@@ -1,9 +1,28 @@
 <?php 
+$path = dirname($_SERVER['PHP_SELF']);
+
+
+	mkdir(getcwd().'/nba_sessions', 0755, true);
+
+
+
+if (!is_writable(session_save_path())) {
+    echo 'Session path "'.session_save_path().'" is not writable for PHP!'; 
+}
+else{
+	
+ini_set('session.save_path',getcwd().'/nba_sessions');
+}
 session_start();
+//echo $_SESSION['REQUEST_URI'];
 if(isset($_SESSION['name'])){
 	//echo $_SESSION['name'];
 	$name = $_SESSION['name'];
-	
+
+	$status = chmod(getcwd()."/".$_SESSION['name'].'.png', 0755);
+}
+else{
+	echo "no session set";
 }
 
 ?>
@@ -63,7 +82,7 @@ body {background-color: powderblue;}
   <div style="padding-top:10px;" class="row">
    
   <div class="col-sm-12">
-<img src= <?php if(isset($_SESSION['name'])) {echo $_SESSION['name'].'.png';} else{echo "nba_default.png";}?> class="pull-right img-responsive"  />
+<img src= <?php if(isset($_SESSION['name'])) {echo $path."/".$_SESSION['name'].'.png';} else{echo "nba_default.png";}?> class="pull-right img-responsive"  />
 </div>
 </div>
 
