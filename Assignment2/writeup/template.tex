@@ -109,8 +109,10 @@ games) VALUES ('$name','$age','$team','$wins'
 Naturally, it is necessary to access the database we have created in order to use our data for chart generation. This step happens at a similar time as the next step, so there is not necessarily a temporal order. As a code example of this step, let's look at a method in our file "vis\_proj.php" file that averages the points per game of a player:
 \begin{lstlisting}
  function get_average_ppg(){
- 	$avg_sql = "SELECT ppg FROM player_info";
- 	$result = mysql_query($avg_sql);
+ 	$avg_sql = "SELECT ppg 
+	FROM player_info";
+ 	
+	$result = mysql_query($avg_sql);
  	$result = mysql_fetch_assoc($result);
  	$sum = 0;
  	foreach($result as $key => $value){
@@ -124,10 +126,14 @@ Naturally, it is necessary to access the database we have created in order to us
 \subsection{Access pChart API}
 In order to generate the charts that we want, we utilized pChart. Accessing this API consisted of the following include statements in our "vis\_proj" file:
 \begin{lstlisting}
-include("pChart2.1.4/pChart2.1.4/class/pData.class.php");
-include("pChart2.1.4/pChart2.1.4/class/pDraw.class.php");
-include("pChart2.1.4/pChart2.1.4/class/pRadar.class.php");
-include("pChart2.1.4/pChart2.1.4/class/pImage.class.php");
+include("pChart2.1.4/pChart2.1.4/class/pData
+.class.php");
+include("pChart2.1.4/pChart2.1.4/class/pDraw
+.class.php");
+include("pChart2.1.4/pChart2.1.4/class/pRadar
+.class.php");
+include("pChart2.1.4/pChart2.1.4/class/pImage
+.class.php");
 \end{lstlisting}
 \subsection{Draw radar chart, bar chart 1, bar chart 2}
 To draw our charts, we utilized pChart's functionalities. Let us explain the proess of drawing the radar chart. First, we initialized a pRadar object. Then, we passed this object into a function along with a player's data. In this function, we used the pChart method "setGraphArea" to specify the size of the graph, created an Options object to hold specifications for what we wanted our graph to look like, and then finally passed our pRadar object into the "drawRadar" pChart function.
