@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 19:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,25 +685,40 @@ File: omlptm.fd
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 122.
-
-<pictures/JamesHarden.png, id=111, 1525.7pt x 421.575pt>
+ [2 <./pictures/georgiatech.jpg>] <pictures/JamesHarden.png, id=177, 1525.7pt x
+ 421.575pt>
 File: pictures/JamesHarden.png Graphic file (type png)
 
 <use pictures/JamesHarden.png>
 Package pdftex.def Info: pictures/JamesHarden.png used on input line 154.
 (pdftex.def)             Requested size: 251.31898pt x 69.44107pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <./pictures/georgiatech.jpg>] [3
+ [3
 
  <./pictures/JamesHarden.png (PNG copy)>]
 Overfull \hbox (281.78333pt too wide) in paragraph at lines 189--190
 [][] 
  []
 
-(./template.bbl)
+(./template.bbl
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 
+     
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.15 
+     
+? 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.15 
+     
+? 
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
  [4
 
@@ -725,13 +740,13 @@ Package rerunfilecheck Info: Checksums for `template.out':
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 17523 strings out of 495063
- 314871 string characters out of 3182201
- 440465 words of memory out of 3000000
- 20121 multiletter control sequences out of 15000+200000
- 33626 words of font info for 172 fonts, out of 3000000 for 9000
+ 17533 strings out of 495063
+ 314922 string characters out of 3182201
+ 440614 words of memory out of 3000000
+ 20127 multiletter control sequences out of 15000+200000
+ 33491 words of font info for 171 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,8n,55p,2688b,1306s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,8n,55p,2688b,1094s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{subsection.6.1} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -784,15 +799,17 @@ pdfTeX warning (dest): name{subsection.2.1} has been referenced but does not ex
 ist, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (4 pages, 258201 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/he
+lvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (4 pages, 277573 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 88 named destinations out of 1000 (max. 500000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 94 named destinations out of 1000 (max. 500000)
  38076 words of extra memory for PDF output out of 42996 (max. 10000000)
 

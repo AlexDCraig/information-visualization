@@ -1,4 +1,20 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{buc}
+Buckets: Nba shot visualization.
+
+\bibitem{mia}
+The heat in charts.
+
+\bibitem{stu}
+Tag: Nba visualization.
+
+\bibitem{vis}
+Visualizing the yearly salary of professional athletes, nba players average $5
+  million a year, Nov 2013.
+
+\bibitem{swe}
+A focus on visualizations: Spider charts, Dec 2015.
 
 \bibitem{chen}
 W.~Chen, T.~Lao, J.~Xia, X.~Huang, B.~Zhu, W.~Hu, and H.~Guan.
@@ -23,5 +39,10 @@ K.~Nijhawan, I.~Proulx, and J.~Reyna.
 \bibitem{pagno}
 B.~Pagno, L.~Guedes, C.~Freitas, and L.~Nedel.
 \newblock Nbavis: Visualizing national basketball association information.
+
+\bibitem{sen}
+.~senth1s.
+\newblock Comparing nba stars to their statistical contemporaries: An
+  application of machine learning, Apr 2016.
 
 \end{thebibliography}
