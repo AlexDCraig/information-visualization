@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 17:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -673,29 +673,46 @@ LaTeX Warning: Citation `reyna' on page 1 undefined on input line 72.
 
 
  <./diamondrule.pdf>]
+Overfull \hbox (78.08437pt too wide) in paragraph at lines 96--97
+[][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 100.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
+
+Overfull \hbox (828.692pt too wide) in paragraph at lines 100--102
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
 No file template.bbl.
 <pictures/georgiatech.jpg, id=26, 838.63312pt x 627.09282pt>
 File: pictures/georgiatech.jpg Graphic file (type jpg)
 
 <use pictures/georgiatech.jpg>
-Package pdftex.def Info: pictures/georgiatech.jpg used on input line 102.
+Package pdftex.def Info: pictures/georgiatech.jpg used on input line 128.
 (pdftex.def)             Requested size: 251.31898pt x 187.91878pt.
 
-Overfull \hbox (310.23608pt too wide) in paragraph at lines 127--128
+Overfull \hbox (310.23608pt too wide) in paragraph at lines 153--154
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
 [2 <./pictures/georgiatech.jpg>] [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 
 
 Package rerunfilecheck Warning: File `template.out' has changed.
@@ -704,29 +721,30 @@ Package rerunfilecheck Warning: File `template.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `template.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  F2E6F67F96BDE407DC4F6491432B67B2;1078.
+(rerunfilecheck)             After:  80B15BD6F5C47BC9A784CDDCC288A7F9;1503.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 17333 strings out of 495063
- 312420 string characters out of 3182201
- 428369 words of memory out of 3000000
- 20060 multiletter control sequences out of 15000+200000
- 30335 words of font info for 139 fonts, out of 3000000 for 9000
+ 17380 strings out of 495063
+ 313046 string characters out of 3182201
+ 433081 words of memory out of 3000000
+ 20079 multiletter control sequences out of 15000+200000
+ 30947 words of font info for 146 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,8n,55p,2721b,680s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,8n,55p,2721b,1102s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (3 pages, 131025 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (3 pages, 142654 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 39 named destinations out of 1000 (max. 500000)
  34327 words of extra memory for PDF output out of 35830 (max. 10000000)
 

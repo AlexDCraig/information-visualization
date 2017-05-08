@@ -76,10 +76,36 @@ Historically, academic publications in information visualization rarely tackle t
 
 \section{Method/Computational Model}
 \subsection{Method Overview}
-\emph{Figure 2} in the appendix is a flow chart diagram of the components necessary to program an interface with three graphs. The first graph is a radar chart that corresponds to a player's assists per game (APG), steals per game (SPG), blocks per game (BPG), rebounds per game (RPG), and turnovers per game (TPG). The second graph is a bar chart that corresponds to a player's average points per game (PPG) versus the average player's average points per game. This bar chart is presented vertically. The third graph is the same as the second bar chart, except rather than presented vertically, it is presented horizontally. 
+\emph{Figure 2} in the appendix is a flow chart diagram of the components necessary to program an interface with three graphs. The first graph is a radar chart that corresponds to a player's assists per game (APG), steals per game (SPG), blocks per game (BPG), rebounds per game (RPG), and turnovers per game (TPG). The second graph is a bar chart that corresponds to a player's average points per game (PPG) versus the average player's average points per game. This bar chart is presented vertically. The third graph is the same as the second bar chart, except rather than presented vertically, it is presented horizontally. For each node in the flow chart diagram, there is a subsection within this section that corresponds to an explanation of how this step in the software engineering process was approached. 
+\subsection{PHP Environment}
+This node is the start block that represents how each subsequent step can be completed. In order to satisfy the following requirements, we must operate in a PHP environment.
+\subsection{CSV File of Statistics}
+An input block, this node represents the NBA statistics we require to generate meaningful charts. In our file "Document2.csv", we have entries consisting of players like James Harden, Danilo Gallinari, and Jordan Clarkson with statistics ranging from their PPG to their RPG.
+\subsection{Plug Statistics of Players into Database}
+In order to do anything meaningful with the data we gathered in our CSV, we must place the data into a database for later use in the pChart environment. To do this, we have a file "insert\_nba.php" that uses mySQL to connect to a database, parse our .csv file, and place it into a table called player\_info. Some code pertaining to these steps:
+To connect to the database:
+\begin{lstlisting}
+$user = 'root';
+$pass ='' ; 
+$db = 'nba';
+mysql_connect('localhost',$user,$pass);
+mysql_select_db($db);
+\end{lstlisting}
+To parse our .csv file:
+\begin{lstlisting}
+$parsed_data = array_map('str_getcsv',file('Document2.csv'));
+\end{lstlisting}
+Finally, to place the data into a table:
+\begin{lstlisting}
+$ins\_sql = "INSERT INTO player\_info (name,age,team\_name,wins,loss,ppg,bpg,rpg,apg,tpg,spg,games) VALUES ('$name','$age','$team','$wins','$loss','$ppg','$bpg','$rpg','$apg','$tpg','$spg','$games')";
 
-\subsection{Stage 1}
-\subsection{Stage n}
+\end{lstlisting}
+
+\subsection{Grab Player Statistics From Database}
+\subsection{Access pChart API}
+\subsection{Draw radar chart, bar chart 1, bar chart 2}
+\subsection{Produce pCharts for viewing}
+This node is the completion of the process of generating charts, a result of compiling the programs outlined in the previous steps. Three charts corresponding to a player are presented to the user.
 \subsection{Parameters}
 \subsection{Figures and Images}
 \subsection{Enhancements}
