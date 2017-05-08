@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 19:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 19:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,7 +714,7 @@ No file template.bbl.
 [3
 
  <./pictures/JamesHarden.png (PNG copy)>]
-Overfull \hbox (224.8778pt too wide) in paragraph at lines 195--196
+Overfull \hbox (395.59435pt too wide) in paragraph at lines 195--196
 [][] 
  []
 
@@ -744,7 +744,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
 Here is how much of TeX's memory you used:
  17459 strings out of 495063
  314063 string characters out of 3182201
- 440434 words of memory out of 3000000
+ 440391 words of memory out of 3000000
  20100 multiletter control sequences out of 15000+200000
  32291 words of font info for 164 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -756,7 +756,7 @@ onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (4 pages, 259117 bytes).
+Output written on template.pdf (4 pages, 259135 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
