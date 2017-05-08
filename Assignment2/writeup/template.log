@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 17:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,7 +680,7 @@ Package pdftex.def Info: pictures/georgiatech.jpg used on input line 75.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (92.61407pt too wide) in paragraph at lines 97--98
+Overfull \hbox (263.33058pt too wide) in paragraph at lines 105--106
 [][] 
  []
 
@@ -692,11 +692,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./pictures/georgiatech.jpg>]
 No file template.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 
 
 Package rerunfilecheck Warning: File `template.out' has changed.
@@ -709,13 +709,13 @@ Package rerunfilecheck Info: Checksums for `template.out':
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 17290 strings out of 495063
- 311354 string characters out of 3182201
- 434242 words of memory out of 3000000
- 20026 multiletter control sequences out of 15000+200000
+ 17324 strings out of 495063
+ 312338 string characters out of 3182201
+ 434207 words of memory out of 3000000
+ 20060 multiletter control sequences out of 15000+200000
  29899 words of font info for 134 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,8n,55p,2692b,566s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -724,7 +724,7 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (2 pages, 128721 bytes).
+Output written on template.pdf (2 pages, 129026 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

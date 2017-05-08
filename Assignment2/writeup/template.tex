@@ -85,15 +85,23 @@ The following is a flow chart diagram of the components necessary to program an 
 \begin{tikzpicture}[node distance=2cm]
 
 \node (start) [startstop] {PHP Environment};
-\node (in1) [io, below of=start] {CSV File of Statistics};
-\node (pro1) [process, below of=in1] {Plug Statistics of Players into Database};
-\node (pro2) [process, right of=pro1] {Grab Player Statistics From Database};
-\node (in2) [io, below of=pro2] {Access pChart API};
-\node (pro3) [process, below of=in2] {Draw radar chart};
-\node (pro4) [process, right of=pro3] {Draw bar chart 1};
-\node (pro5) [process, right of=pro4] {Draw bar chart 2};
-\node (stop) [startstop, below of=pro5] {Produce pCharts for viewing};
+\node (in1) [io, below of=start, yshift=-0.5cm] {CSV File of Statistics};
+\node (pro1) [process, below of=in1, yshift=-0.5cm] {Plug Statistics of Players into Database};
+\node (pro2) [process, right of=pro1, xshift=2cm] {Grab Player Statistics From Database};
+\node (in2) [io, below of=pro2, yshift=-0.5cm] {Access pChart API};
+\node (pro3) [process, below of=in2, yshift=-0.5cm] {Draw radar chart};
+\node (pro4) [process, right of=pro3, xshift=2cm] {Draw bar chart 1};
+\node (pro5) [process, right of=pro4, xshift=2cm] {Draw bar chart 2};
+\node (stop) [startstop, below of=pro5, yshift=-0.5cm] {Produce pCharts for viewing};
 
+\draw [arrow] (start) -- (in1);
+\draw [arrow] (in1) -- (pro1);
+\draw [arrow] (pro1) -- (pro2);
+\draw [arrow] (pro2) -- (in2);
+\draw [arrow] (in2) -- (pro3);
+\draw [arrow] (pro3) -- (pro4);
+\draw [arrow] (pro4) -- (pro5);
+\draw [arrow] (pro5) -- (stop);
 \end{tikzpicture}
 
 \subsection{Stage 1}
